@@ -80,11 +80,11 @@
         </div>
       </div>
       <section class="container mx-auto text-center mt-8">
-        <h1 class="text-6xl font-semibold leading-normal">
+        <h1 class="text-4xl lg:text-6xl font-semibold leading-normal">
           Freshness <span class="text-green-600">You Can <br />Count</span> On,
           Prices You’ll Love!
         </h1>
-        <p class="text-base">
+        <p class="text-base mx-10 mt-5">
           Shop your daily essentials at unbeatable prices. From fresh produce to
           pantry <br />
           staples, we’ve got you covered every day!
@@ -101,7 +101,9 @@
         <h2 class="text-4xl font-semibold text-green-600 mb-9 mt-36 ml-8">
           Services
         </h2>
-        <div class="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-6 place-items-center">
+        <div
+          class="grid lg:grid-cols-3 grid-cols-1 lg:gap-6 gap-6 place-items-center"
+        >
           <div class="card bg-zinc-300 w-96 shadow-xl text-center p-7">
             <figure>
               <img
@@ -163,65 +165,83 @@
         <h2 class="text-4xl font-semibold text-green-600 mb-9 mt-36 ml-8">
           Arrival & Offers
         </h2>
-        <div class="grid lg:grid-cols-2 sm:grid-cols-1 gap-10">
-          <div class="bg-green-600 w-6/6">
+        <div class="grid lg:grid-cols-3 sm:grid-cols-1 gap-3 lg:gap-4">
+          <div class="bg-green-900 rounded-lg mx-3 col-span-1 lg:col-span-2">
             <div class="grid grid-cols-2 p-10">
-              <div>
+              <div class="">
                 <img src="assets/dawat-logo.png" alt="" />
-                <button class="btn">Cook Exotic Dishes</button>
-                <h3>UP to 20% OFF</h3>
+                <a
+                  class="btn bg-green-500 lg:text-xl sm:text-base text-white border-none mt-6 mb-10"
+                  >Cook Exotic Dishes</a
+                >
+                <h3 class="text-white lg:text-4xl">UP to 20% OFF</h3>
               </div>
               <div>
                 <img src="assets/dawat-mock-up.png" alt="" />
               </div>
             </div>
           </div>
-          <div class="bg-blue-950">
+          <div class="bg-blue-950 rounded-lg mx-3 col-span-1">
             <div class="grid grid-cols-2 p-10">
               <div>
-                <img src="assets/dawat-logo.png" alt="" />
-                <h4>The FINEST</h4>
-                <button>Cook Exotic Dishes</button>
+                <img src="assets/india-gate-logo.png" alt="" />
+                <a
+                  class="btn bg-blue-800 lg:text-xl sm:text-base text-white border-none mt-6 mb-10"
+                  >World’s No.1 Rice</a
+                >
+                <h3 class="text-white lg:text-4xl">UP to 40% OFF</h3>
               </div>
               <div>
-                <img src="assets/dawat-mock-up.png" alt="" />
+                <img src="assets/india-gate-mock-up.png" alt="" />
               </div>
             </div>
           </div>
         </div>
       </section>
       <section class="container mx-auto bg-zinc-300 mt-20 p-10 rounded-lg">
-        <div class="grid lg:grid-cols-2 grid-cols-1 align-items-center">
-            <div>
-                <img src="assets/vegetable-busket.png" alt="">
-            </div>
-            <div>
-                <h3>Get Grocery News!</h3>
-                <p>Exclusive training tips, ticks, product deals and more.</p>
-                <input type="email" placeholder="Enter email...">
-                <br>
-                <button class="btn btn-success">Subscribe</button>
-            </div>
+        <div class="grid lg:grid-cols-2 grid-cols-1 items-center">
+          <div>
+            <img src="assets/vegetable-busket.png" alt="" />
+          </div>
+          <div>
+            <h3 class="text-3xl font-semibold">Get Grocery News!</h3>
+            <p class="mt-4 mb-4">
+              Exclusive training tips, ticks, product deals and more.
+            </p>
+            <input
+              type="text"
+              placeholder="Enter email..."
+              class="mb-4 input input-bordered w-full max-w-xs"
+            />
+            <br />
+
+            <a class="btn bg-green-600 text-xl text-white border-none"
+              >Subscribe</a
+            >
+          </div>
         </div>
       </section>
     </main>
     <footer class="h-96 bg-green-600 mt-10 py-8 px-8">
-        <div class="grid lg:grid-cols-3 grid-cols-1 gap-6 container mx-auto">
-            <div>
-                <img src="assets/logo-footer.png" alt="">
-                <p class="mt-4 text-white">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
-            </div>
-            <div class="text-white flex gap-1 flex-col">
-                <a href="">Product</a>
-                <br>
-                <a href="">Services</a>
-                <br>
-                <a href="">Contact Us</a>
-            </div>
-            <div>
-                <p>Follow Us</p>
-            </div>
+      <div class="grid lg:grid-cols-3 grid-cols-1 gap-6 container mx-auto">
+        <div>
+          <img src="assets/logo-footer.png" alt="" />
+          <p class="mt-4 text-white">
+            Discover a world of treats, toys, and essentials handpicked for your
+            furry friends
+          </p>
         </div>
+        <div class="text-white flex gap-1 flex-col">
+          <a href="">Product</a>
+          <br />
+          <a href="">Services</a>
+          <br />
+          <a href="">Contact Us</a>
+        </div>
+        <div>
+          <p>Follow Us</p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
