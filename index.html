@@ -40,26 +40,30 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="sora-font-styles">
-    <header class="container mx-auto">
+    <header>
       <!-- Navigation Section -->
-      <div class="navbar bg-base-100">
+      <div class="navbar bg-base-100 container mx-auto">
         <div class="navbar-start">
           <div class="dropdown">
-            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-              <i class="fa-solid fa-bars text-3xl"></i>
+            <div>
+              <a class="btn btn-ghost text-xl">
+                <img src="assets/logo-header.png" alt="" />
+              </a>
             </div>
-            <ul
-              tabindex="0"
-              class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
-            >
-              <li><a>Product</a></li>
-              <li><a>Services</a></li>
-              <li><a>Contact us</a></li>
-            </ul>
+            <div>
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <i class="fa-solid fa-bars text-3xl"></i>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Product</a></li>
+                <li><a>Services</a></li>
+                <li><a>Contact us</a></li>
+              </ul>
+            </div>
           </div>
-          <a class="btn btn-ghost text-xl">
-            <img src="assets/logo-header.png" alt="" />
-          </a>
         </div>
         <div class="navbar-center hidden lg:flex">
           <ul class="menu menu-horizontal px-1 text-xl gap-8">
@@ -75,6 +79,86 @@
           <a class="btn bg-green-600 text-xl text-white">Register</a>
         </div>
       </div>
+      <section class="container mx-auto text-center mt-8">
+        <h1 class="text-6xl font-semibold leading-normal">
+          Freshness <span class="text-green-600">You Can <br />Count</span> On,
+          Prices You’ll Love!
+        </h1>
+        <p class="text-base">
+          Shop your daily essentials at unbeatable prices. From fresh produce to
+          pantry <br />
+          staples, we’ve got you covered every day!
+        </p>
+        <div class="flex justify-center">
+          <img src="assets/hero-vegetables.png" alt="" />
+        </div>
+      </section>
     </header>
+
+    <main>
+      <!-- Service Card -->
+      <section class="container mx-auto">
+        <h2 class="text-4xl font-semibold text-green-600 mb-9 mt-36">
+          Services
+        </h2>
+        <div class="grid lg:grid-cols-3 sm:grid-cols-1 sm:gap-3">
+          <div class="card bg-zinc-300 w-96 shadow-xl text-center p-7">
+            <figure>
+              <img
+                class="bg-white p-5 rounded-full"
+                src="assets/service.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-semibold">24/7 Services</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </p>
+            </div>
+          </div>
+          <div class="card bg-zinc-300 w-96 shadow-xl text-center p-7">
+            <figure>
+              <img
+                class="bg-white p-5 rounded-full"
+                src="assets/delivery.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-semibold">Fast Delivery</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </p>
+            </div>
+          </div>
+          <div class="card bg-zinc-300 w-96 shadow-xl text-center p-7">
+            <figure>
+              <img
+                class="bg-white p-5 rounded-full"
+                src="assets/healthy.png"
+                alt="Shoes"
+              />
+            </figure>
+            <div class="card-body text-center">
+              <h2 class="text-2xl font-semibold">Healthy Products</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-zinc-300 w-full">
+        <div class="container mx-auto">
+          <h2 class="text-4xl font-semibold text-green-600 mb-9 mt-36">
+            Popular Products
+          </h2>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
